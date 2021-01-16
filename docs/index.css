@@ -1,5 +1,3 @@
-/* The stylesheet is meant to imitate that of https://play.liracer.org */
-
 /* The color variables declared in the following block correspond to the play.liracer.org colors, see
    https://github.com/fossegrim/play.liracer.org/blob/6b812a9d0559e2f8b4ddc9290a085deaf2f61730/front/src/colors.js */
 
@@ -44,4 +42,9 @@ body {
 
 #call-to-action:focus {
     outline: none;
+}
+
+summary {
+    outline: none;
+    margin-bottom: 0.25rem;
 }
