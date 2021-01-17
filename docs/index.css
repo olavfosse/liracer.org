@@ -1,6 +1,5 @@
 /* The color variables declared in the following block correspond to the play.liracer.org colors, see
    https://github.com/fossegrim/play.liracer.org/blob/6b812a9d0559e2f8b4ddc9290a085deaf2f61730/front/src/colors.js */
-
 :root {
     --layer-0-background: #fdf6e3;
     --layer-1-background: #eee8d5;
@@ -13,38 +12,57 @@
 
 body {
     background: var(--layer-0-background);
-    margin: 0;
-    padding-left: auto;
-    padding-right: auto;
+    margin: 32px;
 }
 
-#frame {
-    margin: 32px;
+main {
+    border-top: solid 30px var(--layer-2-background);
     padding: 16px;
-    padding-top: 0px;
-    max-width: 1000px;
-    border-top: 30px solid var(--layer-2-background);
     background: var(--layer-1-background);
     color: var(--layer-1-foreground);
+    /* max-width: 1000px */
+}
+
+#liracer {
+    margin-top: 0;
+}
+
+h1 > a, h2 > a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1 > a:hover, h2 > a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    color: var(--layer-2-background);
+    border-color: var(--layer-2-background);
+    background: var(--layer-2-background);
+}
+
+summary {
+    outline: none;
 }
 
 #call-to-action {
-    margin-left: 50px;
-    margin-top: 10px;
-    width: 300px;
+    max-width: 350px;
     height: 40px;
+    width: 100%;
     border: solid var(--layer-2-background) 4px;
     background: inherit;
     color: inherit;
     font-size: 16px;
     font-weight: bold;
+    transition-duration: 0.12s;
+    cursor: pointer;
 }
+
+#call-to-action:hover {
+    background: var(--layer-2-background);
+}   
 
 #call-to-action:focus {
     outline: none;
-}
-
-summary {
-    outline: none;
-    margin-bottom: 0.25rem;
 }
