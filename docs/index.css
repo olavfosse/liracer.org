@@ -21,6 +21,10 @@
     font-size: 14px;
 }
 
+p {
+    max-width: 40em;
+}
+
 body {
     background: var(--layer-0-background);
     margin: var(--window-gap);
